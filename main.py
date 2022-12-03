@@ -30,7 +30,7 @@ app = create_app()
 @app.route('/')
 def hello():
     """Return a friendly HTTP greeting."""
-    return 'Hello World! werkt dees nu eindelijk?'
+    return 'Testen: Test1'
 
 
 if __name__ == '__main__':

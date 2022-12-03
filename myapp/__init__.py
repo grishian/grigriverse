@@ -5,6 +5,12 @@ def create_app(config=None):
 
     app.debug = True
 
+    do_register_blueprints(app)
+
     return app
 
 
+def do_register_blueprints(flaskapp):
+    from myapp.bp_general import bp_general
+
+    flaskapp.register_blueprint(bp_general)
