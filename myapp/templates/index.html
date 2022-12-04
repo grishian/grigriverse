@@ -26,7 +26,7 @@
 <body>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container-fluid">
-            <a class="navbar-brand" href="#">GriGriVerse</a>
+            <a class="navbar-brand" href="{{url_for('bp_general.do_home')}}">GriGriVerse</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
                 aria-label="Toggle navigation">
@@ -34,9 +34,7 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li class="nav-item">
-                        <a class="nav-link" href="{{url_for('bp_general.do_home')}}">Start</a>
-                    </li>
+
                     <li class="nav-item">
                         <a class="nav-link" href="{{url_for('bp_general.do_forum')}}">Forum</a>
                     </li>
@@ -53,13 +51,18 @@
             </div>
         </div>
     </nav>
-    <h1>ip: play.grigriverse.com</h1>
+    <h1>ip: play.grigriverse.com<br>
+        versie: 1.17</h1>
     <div class="shadow p-3 my-5 bg-body rounded container position-relative">
 
         {% block main_content %}
 
         {% endblock %}
     </div>
+
+    <div class="shadow p-3 my-5 container position-relative alert alert-warning" role="alert">
+        <b>Website onder constructie...<b>
+      </div>
 
 </body>
 

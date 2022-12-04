@@ -27,10 +27,10 @@ app = create_app()
 ##app = Flask(__name__)
 
 
-@app.route('/')
-def hello():
-    """Return a friendly HTTP greeting."""
-    return 'Testen: Test1'
+##@app.route('/')
+##def hello():
+##    """Return a friendly HTTP greeting."""
+##    return 'Testen: Test1'
 
 
 if __name__ == '__main__':
