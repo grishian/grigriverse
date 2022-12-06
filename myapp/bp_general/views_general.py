@@ -14,10 +14,6 @@ def do_forum():
 def do_tutorials():
     return render_template('general/tutorials.html')
 
-@bp_general.route('/events')
-def do_events():
-    return render_template('general/events.html')
-
 @bp_general.route('/contact')
 def do_contact():
     return render_template('general/contact.html')
