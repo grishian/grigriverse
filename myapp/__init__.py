@@ -12,5 +12,8 @@ def create_app(config=None):
 
 def do_register_blueprints(flaskapp):
     from myapp.bp_general import bp_general
+    from myapp.bp_tutorials import bp_tutorials
 
     flaskapp.register_blueprint(bp_general)
+    flaskapp.register_blueprint(bp_tutorials)
+
