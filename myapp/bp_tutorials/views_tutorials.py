@@ -8,8 +8,8 @@ def do_tutorials_minecraft_version():
 
 @bp_tutorials.route('/tutorials/join_server')
 def do_tutorials_join_server():
-    return render_template('tutorials/join_server.html')
+    return render_template('tutorials/join_server.html', title='Join server')
 
 @bp_tutorials.route('/tutorials/server_commands')
 def do_tutorials_server_commands():
-    return render_template('tutorials/server_commands.html')
+    return render_template('tutorials/server_commands.html', title='Server commands')

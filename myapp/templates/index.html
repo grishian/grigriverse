@@ -2,6 +2,7 @@
 <html lang="en">
 
 <head>
+    <link rel="icon" type="image/x-icon" href="../static/images/server-icon.png">
 
     {% block title %}
     <title>{{title}}</title>
@@ -95,12 +96,11 @@ Convert HEX to RGBA - http://hex2rgba.devoth.com/
     </div>
 
 
+    
+
     <div class="img-gradient">
         <img src="../static/images/clouds.png" class="img-fluid" alt="skyblock_banner8">
     </div>
-
-
-    <!--https://evc273.pcloud.com/dpZ8L04m4ZHCipxuZ1uW0ZXZqXQCc7Z3VZZEI0ZZkWVJWI9k7Iurw1H10n1glH4TNMWV/clouds.png-->
 
 
     <div class="shadow p-3 my-5 bg-body rounded container position-relative">
@@ -111,9 +111,28 @@ Convert HEX to RGBA - http://hex2rgba.devoth.com/
     </div>
 
     <div class="shadow p-3 my-5 container position-relative alert alert-warning" role="alert">
-        <b>Website onder constructie...<b>
+        <b>Website onder constructie...</b>
     </div>
 
 </body>
+
+<!-- to initialize tooltips everywhere -->
+<script>
+    var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+  return new bootstrap.Tooltip(tooltipTriggerEl)
+})
+
+</script>
+
+<!-- to initialize popovers everywhere -->
+<script>
+var popoverTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="popover"]'))
+var popoverList = popoverTriggerList.map(function (popoverTriggerEl) {
+  return new bootstrap.Popover(popoverTriggerEl)
+})
+
+
+</script>
 
 </html>
