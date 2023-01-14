@@ -1,5 +1,112 @@
 {% extends 'index.html' %}
 
 {% block main_content %}
+<div id="carouselExampleIndicators" class="carousel carousel-dark slide" data-bs-ride="false">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4" aria-label="Slide 5"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="5" aria-label="Slide 6"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="6" aria-label="Slide 7"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="7" aria-label="Slide 8"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="8" aria-label="Slide 9"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="9" aria-label="Slide 10"></button>
+
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="../../static/images/handleidingen/server_commands/1_server_motd.png" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Server eerste bericht</h5>
+          <p>Als je de server joint wordt je begroet met een berichtje. Als je op de blauwe link klikt kan je onze website ook bezoeken!</p>
+      </div>
+      </div>
+      <div class="carousel-item">
+        <img src="../../static/images/handleidingen/server_commands/2_command_spawn.png" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+            <h5>Spawn command</h5>
+            <p>Typ /spawn . Na 3 seconden wordt je naar de spawn geteleporteerd. In die 3 seconden wachten mag je wel niet rondlopen of de teleportatie wordt geannuleerd.</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="../../static/images/handleidingen/server_commands/3_command_help.png" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+            <h5>Help command</h5>
+            <p>Typ /help . Je krijgt een lijst met standaard commando's. Typ /help 2 , /help 3 ,... om meer commando's te zien. 
+                Je kan ook soms informatie zien over een command als je er 'help' voor zet. Voorbeeld /help mail . Laat je zien hoe je 
+                het /mail command moet gebruiken.
+            </p>
+        </div>
+      </div>
+
+      <div class="carousel-item">
+        <img src="../../static/images/handleidingen/server_commands/4_command_kits.png" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Kits command</h5>
+          <p>Doe /kits . Om al je kits te zien. Doe bijvoorbeeld '/kit beginner' om de beginner kit te krijgen. Merk wel op dat je nu kit 
+            zonder de 's' schrijft.
+          </p>
+      </div>
+      </div>
+
+      <div class="carousel-item">
+        <img src="../../static/images/handleidingen/server_commands/5_command_warps.png" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Warps command</h5>
+          <p>Doe '/warps' om een lijst met warps te zien. Net zoals bij kits schrijf je '/warp spawn' zonder 's'.</p>
+      </div>
+      </div>
+
+      <div class="carousel-item">
+        <img src="../../static/images/handleidingen/server_commands/6_command_is_help.png" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Island commando's</h5>
+          <p>Doe '/is help' om al de commando's te zien die bij skyblock horen. Ook hier kan je '/is help 2', '/is help 3', ... doen.</p>
+      </div>
+      </div>
+      <div class="carousel-item">
+        <img src="../../static/images/handleidingen/server_commands/7_command_is.png" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>'/is' command</h5>
+          <p>Doe '/is' om het skyblock menu te zien. Hier kan je allerlei handige opties aanpassen. Zweef over de items om meer informatie te krijgen.</p>
+      </div>
+      </div>
+      <div class="carousel-item">
+        <img src="../../static/images/handleidingen/server_commands/8_command_is_upgrade.png" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Island upgrades</h5>
+          <p>Doe '/is upgrades' om je eiland te upgraden. Je zal wel een bepaalde hoeveelheid geld en crystals moeten sparen.</p>
+      </div>
+      </div>
+
+      <div class="carousel-item">
+        <img src="../../static/images/handleidingen/server_commands/9_command_is_shop.png" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>De shop</h5>
+          <p>Doe '/is shop' om allerlei items te kopen.</p>
+      </div>
+      </div>
+
+      <div class="carousel-item">
+        <img src="../../static/images/handleidingen/server_commands/10_command_is_go.png" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Je eigen eiland</h5>
+          <p>Doe '/is go' of '/is home' om naar je eigen eiland te teleporteren.</p>
+      </div>
+      </div>
+
+
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
 {% endblock %}
 
