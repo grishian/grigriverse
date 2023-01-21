@@ -17,7 +17,10 @@
 
 ##from flask import Flask
 import sys
+import os
 from myapp import create_app
+from connect_unix import connect_unix_socket
+import sqlalchemy
 
 # If `entrypoint` is not defined in app.yaml, App Engine will look for an app
 # called `app` in `main.py`.
@@ -25,6 +28,15 @@ sys.dont_write_bytecode = True
 
 app = create_app()
 ##app = Flask(__name__)
+
+def init_connection_pool() -> sqlalchemy.engine.base.Engine:
+    # use a Unix socket when INSTANCE_UNIX_SOCKET (e.g. /cloudsql/project:region:instance) is defined
+    if os.environ.get("INSTANCE_UNIX_SOCKET"):
+        return connect_unix_socket()
+
+    raise ValueError(
+        "Missing database connection type. Please define one of INSTANCE_HOST, INSTANCE_UNIX_SOCKET, or INSTANCE_CONNECTION_NAME"
+    )
 
 
 ##@app.route('/')

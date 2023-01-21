@@ -17,3 +17,6 @@ def do_register_blueprints(flaskapp):
     flaskapp.register_blueprint(bp_general)
     flaskapp.register_blueprint(bp_tutorials)
 
+
+
+
